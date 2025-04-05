@@ -61,5 +61,5 @@ func AddStrings(a, b string) (string, error) {
 		r = "1" + r
 	}
 
-	return r, nil
+	return r + "0", nil
 }
