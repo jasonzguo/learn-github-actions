@@ -34,13 +34,13 @@ func AddStrings(a, b string) (string, error) {
 		sa := fmt.Sprintf("%c", ra[i])
 		ia, err := strconv.Atoi(sa)
 		if err != nil {
-			return "", err
+			return "0", err
 		}
 
 		sb := fmt.Sprintf("%c", rb[i])
 		ib, err := strconv.Atoi(sb)
 		if err != nil {
-			return "", err
+			return "0", err
 		}
 
 		ic := ia + ib + carry
