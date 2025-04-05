@@ -42,6 +42,11 @@ func TestAddStrings(t *testing.T) {
 			inputs: []string{"257", "253"},
 			output: "510",
 		},
+		{
+			name:   "invalid inputs",
+			inputs: []string{"abc", "253"},
+			output: "0",
+		},
 	}
 
 	for _, testCase := range testCases {
